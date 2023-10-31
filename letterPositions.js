@@ -2,7 +2,8 @@ const letterPositions = function(str) {
   const results = {};
   var counter = 0;
   for (const letter of str) {
-    if (results[letter] === " "){
+    if (letter === " "){
+      continue;
     }else if (results[letter]) {
       results[letter].push(counter);
     }else {
@@ -10,7 +11,6 @@ const letterPositions = function(str) {
     }
     counter ++;
   }
-  console.log(results)
   return results;
 }
 
