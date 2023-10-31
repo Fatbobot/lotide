@@ -27,7 +27,7 @@ const countLetters = function(str) {
       delete results[remove];
     }
   }
-  console.log(results)
   return results
 }
 countLetters("hello world")
+countLetters("what what what what what what")
