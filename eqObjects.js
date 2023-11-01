@@ -34,17 +34,13 @@ const eqObjects = function ( objOne, objTwo) {
     return false
   }
   for (const item of keys1) {
-    if (Array.isArray(item) && eqArrays(objOne.item, objTwo.item)) {
-      for (const stuff of item) {
-
-        if(!(objOne.item[stuff] === objTwo.item[stuff]))
-        
-        return false
+    if (Array.isArray(objOne[item]) && Array.isArray(objTwo[item])) {
+      if (!eqArrays(objOne[item], objTwo[item])) {
+        return false;
       }
+    } else if (objOne[item] !== objTwo[item]) {
+      return false;
     }
-    else if (!(objOne.item === objTwo.item)) {
-      return false
-    } 
   }
   return true
 }
