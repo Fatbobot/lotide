@@ -38,22 +38,32 @@ const eqObjects = function ( objOne, objTwo) {
       for (const stuff of item) {
 
         if(!(objOne.item[stuff] === objTwo.item[stuff]))
-        
+
         return false
       }
     }
     else if (!(objOne.item === objTwo.item)) {
+      
       return false
     } 
   }
   return true
 }
 
+const assertObjectsEqual = function (actual, expected) {
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] }
-const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-const elseLongSleeveMultiColorShirtObject= {colors: ["red", "blue"], size: "medium", sleeveLength: "long" };
-console.log(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject))
+  const inspect = require('util').inspect;
 
-console.log(eqObjects(longSleeveMultiColorShirtObject, elseLongSleeveMultiColorShirtObject))
+  if (eqObjects(actual, expected)) {
+    console.log (`✅✅✅ Assertion passed: ${inspect(actual)}) === ${inspect(expected)}`);
+  }else {
+    
+  console.log (`🛑🛑🛑 Assertion failed: ${inspect(actual)}) !== ${inspect(expected)}`);
+  }
+}
+const stuff = {hello : "hi", goodbye: "cya"}
+const test1 = {}
+const test2 = {numbers: [1 , 2 ,3 , 4], words: ["hello", "shishkabob"], boolean: true}
+assertObjectsEqual(stuff, {hello : "hi", goodbye: "cya"})
+assertObjectsEqual(test1, {})
+assertObjectsEqual(test2, {numbers: [1 , 2 ,3 , 4], words: ["hello", "shishkabob"], boolean: true})
