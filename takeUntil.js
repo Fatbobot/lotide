@@ -1,10 +1,13 @@
 const takeUntil = function(arr, callback) {
-  results = [];
+  const results = [];
   for (const item of arr) {
+
     if (!callback(item)) {
 
-    results.push(item);
+      results.push(item);
+
     }else {
+
     break
     }
   }
