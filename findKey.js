@@ -14,12 +14,12 @@ const assertEqual = function(actual, expected) {
 const findKey = function(obj, callback) {
   for (const item in obj) {
     if(callback(obj[item])) {
-      return item
+      return item;
     }
   }
 
 
-return undefined
+return undefined;
 }
 const starNames = {
   "Blue Hill": { stars: 1 },
