@@ -13,8 +13,6 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 }
 
-assertArraysEqual([1, 2, 3], [1, 2 ,3]);
-
 
 const eqArrays = function(arrOne, arrTwo) {
   if (arrOne.length !== arrTwo.length){
