@@ -29,5 +29,7 @@ const countLetters = function(str) {
   }
   return results
 }
-countLetters("hello world")
-countLetters("what what what what what what")
+// countLetters("hello world")
+// countLetters("what what what what what what")
+
+module.exports = countLetters;

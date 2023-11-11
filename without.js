@@ -47,7 +47,9 @@ const without = function(source, itemsToRemove) {
 }
 
 
-console.log(without([1, 2, 3 , 4 , 5], [2, 3]));
-console.log(without(["1", "2", 3 , 4 , 5], ["2", 3]));
-console.log(without([1, 2, 3 , 4 , 5], [2, 3, 5]));
-console.log(without([1, 2, 3 , 4], [0, 1]));
+// console.log(without([1, 2, 3 , 4 , 5], [2, 3]));
+// console.log(without(["1", "2", 3 , 4 , 5], ["2", 3]));
+// console.log(without([1, 2, 3 , 4 , 5], [2, 3, 5]));
+// console.log(without([1, 2, 3 , 4], [0, 1]));
+
+module.exports = without;

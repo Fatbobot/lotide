@@ -30,6 +30,8 @@ const starNames = {
   "Akelarre":  { stars: 3 }
 }
 
-  assertEqual(findKey(starNames,(x) => x.stars === 2), "noma")
-  assertEqual(findKey(starNames,(x) => x.stars === 3), "Akaleri")
-  assertEqual(findKey(starNames,(x) => x.stars === 1), "Blue Hill")
+  // assertEqual(findKey(starNames,(x) => x.stars === 2), "noma")
+  // assertEqual(findKey(starNames,(x) => x.stars === 3), "Akaleri")
+  // assertEqual(findKey(starNames,(x) => x.stars === 1), "Blue Hill")
+
+module.exports = findKey;

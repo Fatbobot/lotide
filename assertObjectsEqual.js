@@ -56,9 +56,11 @@ const assertObjectsEqual = function (actual, expected) {
   console.log (`🛑🛑🛑 Assertion failed: ${inspect(actual)}) !== ${inspect(expected)}`);
   }
 }
-const stuff = {hello : "hi", goodbye: "cya"}
-const test1 = {}
-const test2 = {numbers: [1 , 2 ,3 , 4], words: ["hello", "shishkabob"], boolean: true}
-assertObjectsEqual(stuff, {hello : "hi", goodbye: "cya"})
-assertObjectsEqual(test1, {})
-assertObjectsEqual(test2, {numbers: [1 , 2 ,3 , 4], words: ["hello", "shishkabob"], boolean: true})
+// const stuff = {hello : "hi", goodbye: "cya"}
+// const test1 = {}
+// const test2 = {numbers: [1 , 2 ,3 , 4], words: ["hello", "shishkabob"], boolean: true}
+// assertObjectsEqual(stuff, {hello : "hi", goodbye: "cya"})
+// assertObjectsEqual(test1, {})
+// assertObjectsEqual(test2, {numbers: [1 , 2 ,3 , 4], words: ["hello", "shishkabob"], boolean: true})
+
+module.exports = assertObjectsEqual;

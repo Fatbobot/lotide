@@ -46,10 +46,12 @@ const eqObjects = function ( objOne, objTwo) {
 }
 
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] }
-const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-const elseLongSleeveMultiColorShirtObject= {colors: ["red", "blue"], size: "medium", sleeveLength: "long" };
-console.log(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject))
+// const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
+// const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] }
+// const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+// const elseLongSleeveMultiColorShirtObject= {colors: ["red", "blue"], size: "medium", sleeveLength: "long" };
+// console.log(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject))
 
-console.log(eqObjects(longSleeveMultiColorShirtObject, elseLongSleeveMultiColorShirtObject))
+// console.log(eqObjects(longSleeveMultiColorShirtObject, elseLongSleeveMultiColorShirtObject))
+
+module.exports = eqObjects;
