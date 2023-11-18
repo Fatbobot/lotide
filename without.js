@@ -1,6 +1,4 @@
-
-
-const eqArrays = function(arrOne, arrTwo) {
+const eqArrays = function (arrOne, arrTwo) {
   if (arrOne.length !== arrTwo.length) {
     return false;
   }
@@ -14,7 +12,7 @@ const eqArrays = function(arrOne, arrTwo) {
   }
 };
 
-const assertArraysEqual = function(arrOne, arrTwo) {
+const assertArraysEqual = function (arrOne, arrTwo) {
   if (arrOne.length === 0) {
     return undefined;
   }
@@ -29,22 +27,22 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 };
 
-const without = function(source, itemsToRemove) {
+const without = function (source, itemsToRemove) {
   const stuff = [];
   for (const item of source) {
     if (!itemsToRemove.includes(item)) {
       stuff.push(item);
     }
-  };
+  }
   return stuff;
 };
 
-assertArraysEqual(without([1, 2, 3 , 4 , 5], [2, 3]), [1, 4, 5]);
-assertArraysEqual(without(["1", "2", 3 , 4 , 5], ["2", 3]), ["1", 4, 5]);
-assertArraysEqual(without([1, 2, 3 , 4 , 5], [2, 3, 5]), [1, 5]);
-assertArraysEqual(without([1, 2, 3 , 4], [0, 1]), [2, 3 ,4]);
+assertArraysEqual(without([1, 2, 3, 4, 5], [2, 3]), [1, 4, 5]);
+assertArraysEqual(without(["1", "2", 3, 4, 5], ["2", 3]), ["1", 4, 5]);
+assertArraysEqual(without([1, 2, 3, 4, 5], [2, 3, 5]), [1, 5]);
+assertArraysEqual(without([1, 2, 3, 4], [0, 1]), [2, 3, 4]);
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"])
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
 module.exports = without;

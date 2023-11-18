@@ -1,17 +1,17 @@
-const letterPositions = function(str) {
+const letterPositions = function (str) {
   const results = {};
   var counter = 0;
   for (const letter of str) {
-    if (letter === " "){
+    if (letter === " ") {
       continue;
-    }else if (results[letter]) {
+    } else if (results[letter]) {
       results[letter].push(counter);
-    }else {
-    results[letter] = [counter];
+    } else {
+      results[letter] = [counter];
     }
-    counter ++;
+    counter++;
   }
   return results;
-}
+};
 
 module.exports = letterPositions;

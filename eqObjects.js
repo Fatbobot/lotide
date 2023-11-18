@@ -1,37 +1,33 @@
-const assertEqual = function(actual, expected) {
-
+const assertEqual = function (actual, expected) {
   if (actual === expected) {
-    console.log (`Assertion Passed: ${actual} === ${expected}`);
+    console.log(`Assertion Passed: ${actual} === ${expected}`);
     return true;
-
   } else {
-    console.log (`Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`Assertion Failed: ${actual} !== ${expected}`);
     return false;
   }
 };
 
-const eqArrays = function(arrOne, arrTwo) {
-
-  if (arrOne.length !== arrTwo.length){
+const eqArrays = function (arrOne, arrTwo) {
+  if (arrOne.length !== arrTwo.length) {
     return false;
   }
 
   for (const item in arrOne) {
     if (arrOne[item] !== arrTwo[item]) {
       return false;
-      
     } else {
       return true;
     }
   }
-}
+};
 
-const eqObjects = function ( objOne, objTwo) {
-  keys1 = Object.keys(objOne)
-  keys2 = Object.keys(objTwo)
+const eqObjects = function (objOne, objTwo) {
+  keys1 = Object.keys(objOne);
+  keys2 = Object.keys(objTwo);
 
   if (!(keys1.length === keys2.length)) {
-    return false
+    return false;
   }
   for (const item of keys1) {
     if (Array.isArray(objOne[item]) && Array.isArray(objTwo[item])) {
@@ -42,9 +38,8 @@ const eqObjects = function ( objOne, objTwo) {
       return false;
     }
   }
-  return true
-}
-
+  return true;
+};
 
 // const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 // const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] }
