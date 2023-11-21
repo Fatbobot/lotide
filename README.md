@@ -41,4 +41,4 @@ The following functions are currently implemented:
 * `function13(middle)`: receives array. returns middle values. 1 if odd, 2 if even length array
 * `function14(tail)`: receives array. returns all values in array after first position
 * `function15(head)`: receives array and callback. Returns all values up until specified value in callback
-* `function16(without)`: receives two arrays. returns array without values in second aray
+* `function16(without)`: receives two arrays. returns array without values in second array
