@@ -1,3 +1,4 @@
+//receives array. returns middle values. 1 if odd, 2 if even length array
 const middle = function (arr) {
   const middleVals = [];
 

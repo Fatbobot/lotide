@@ -1,3 +1,4 @@
+//returns a number representing how many non space characters are in a string
 const countLetters = function (str) {
   const results = {};
   for (const letter of str) {

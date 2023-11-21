@@ -1,3 +1,5 @@
+//receives two arrays and outputs an object
+//returns a count of how many of the same value are in an input
 const countOnly = function (allItems, itemsToCount) {
   const results = {};
 

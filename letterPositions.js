@@ -1,3 +1,4 @@
+//return all the indices (zero-based positions) in the string where each character is found.
 const letterPositions = function (str) {
   const results = {};
   let counter = 0;

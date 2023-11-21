@@ -1,3 +1,4 @@
+//prints an assertion if two array inputs are equal
 const eqArrays = require("./eqArrays");
 
 const assertArraysEqual = function (arrOne, arrTwo) {

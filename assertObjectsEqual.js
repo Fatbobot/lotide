@@ -1,3 +1,4 @@
+//prints an assertion comparing an object to expected object result
 const eqObjects = require("./eqObjects");
 
 const assertObjectsEqual = function (actual, expected) {

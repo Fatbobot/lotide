@@ -1,3 +1,5 @@
+//receives array
+//removes and merges nested arrays in umbrella array
 const flatten = function (input) {
   const output = [];
 

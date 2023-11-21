@@ -41,9 +41,6 @@ The following functions are currently implemented:
 * `function13(middle)`: receives array. returns middle values. 1 if odd, 2 if even length array
 * `function14(tail)`: receives array. returns all values in array after first position
 * `function15(head)`: receives array and callback. Returns all values up until specified value in callback
-<<<<<<< HEAD
 * `function16(without)`: receives two arrays. returns array without values in second array
-=======
-* `function16(without)`: receives two arrays. returns array without values in second aray
 * `function17(map)`: receives an array and a callback. Function maps and applies callback to individual values in array
->>>>>>> 4122940dd51e6e4021fa08ade0cad633fd398085
+* `function17(takeUntil)`: receives an array and a callback. Function pushes array values into new array until it reaches a value specified in callback function
