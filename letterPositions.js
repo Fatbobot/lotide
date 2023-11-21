@@ -1,6 +1,6 @@
 const letterPositions = function (str) {
   const results = {};
-  var counter = 0;
+  let counter = 0;
   for (const letter of str) {
     if (letter === " ") {
       continue;
