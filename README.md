@@ -42,3 +42,4 @@ The following functions are currently implemented:
 * `function14(tail)`: receives array. returns all values in array after first position
 * `function15(head)`: receives array and callback. Returns all values up until specified value in callback
 * `function16(without)`: receives two arrays. returns array without values in second aray
+* `function17(map)`: receives an array and a callback. Function maps and applies callback to individual values in array
