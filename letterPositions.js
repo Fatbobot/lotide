@@ -4,6 +4,7 @@ const letterPositions = function (str) {
   let counter = 0;
   for (const letter of str) {
     if (letter === " ") {
+      counter++;
       continue;
     } else if (results[letter]) {
       results[letter].push(counter);
@@ -14,5 +15,4 @@ const letterPositions = function (str) {
   }
   return results;
 };
-
 module.exports = letterPositions;
